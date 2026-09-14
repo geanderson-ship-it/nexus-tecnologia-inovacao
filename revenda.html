@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revenda Inteligente | Concessionárias & Veículos | Nexus Tecnologia e Inovação</title>
+  <meta name="description" content="Acelerador de vendas para revendedoras de veículos, autopeças e redes de distribuidores. Catálogo digital sincronizado com ficha técnica completa, fotos em alta definição, simulação imediata de financiamento e qualificação automática de leads." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%23f59e0b%22/><text y=%2268%22 font-size=%2260%22 font-family=%22system-ui,sans-serif%22 font-weight=%22bold%22 fill=%22%23000000%22 x=%2226%22>N</text></svg>" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              350: '#fbbf24',
+              450: '#f59e0b',
+              550: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #000000;
+      min-height: 100vh;
+      color: #ffffff;
+    }
+    .amber-gradient-bg {
+      background: radial-gradient(ellipse at center, rgba(245,158,11,0.75) 0%, rgba(245,158,11,0.22) 45%, rgba(0,0,0,1) 120%);
+    }
+    .glow-amber {
+      box-shadow: 0 0 45px -10px rgba(245, 158, 11, 0.28);
+    }
+    .glow-amber-lg {
+      box-shadow: 0 0 70px -15px rgba(245, 158, 11, 0.38);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .menu-aura {
+      box-shadow: 0 0 16px -3px rgba(245, 158, 11, 0.28);
+    }
+    .menu-aura:hover {
+      box-shadow: 0 0 24px 2px rgba(245, 158, 11, 0.45);
+    }
+  </style>
+</head>
+<body class="bg-black text-white selection:bg-amber-500 selection:text-black relative overflow-x-hidden">
+
+  <div class="fixed inset-0 -z-20 bg-black pointer-events-none"></div>
+  <div class="fixed inset-0 -z-10 amber-gradient-bg pointer-events-none"></div>
+
+  <!-- MASTHEAD SOBERANO -->
+  <div id="masthead-brand" class="relative w-full border-b border-amber-500/30 bg-black/90 backdrop-blur-md py-6 sm:py-8 px-6 sm:px-10 lg:px-14 overflow-hidden text-center">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,158,11,0.28)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center justify-center text-center gap-3">
+      <a href="/index.html" class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 group">
+        <h1 class="text-6xl sm:text-7xl md:text-8xl font-black tracking-tight text-white leading-none select-none flex items-center">
+          <span>NE</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 via-amber-400 to-amber-600 drop-shadow-[0_0_35px_rgba(245,158,11,0.9)]">X</span>
+          <span>US</span>
+        </h1>
+        <div class="hidden sm:block w-[3px] h-16 sm:h-20 md:h-24 bg-gradient-to-b from-amber-400 via-amber-500/80 to-transparent rounded-full"></div>
+        <div class="flex flex-col justify-center sm:text-left text-center">
+          <span class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black tracking-[0.16em] text-white uppercase leading-tight">TECNOLOGIA</span>
+          <span class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black tracking-[0.16em] text-amber-300 uppercase leading-tight">& INOVAÇÃO</span>
+        </div>
+      </a>
+      <div class="text-xs text-amber-300/80 font-mono tracking-wider uppercase font-semibold mt-1">
+        Nexus Tecnologia e Inovação • Soluções Simples e Práticas
+      </div>
+    </div>
+  </div>
+
+    <header class="border-b border-amber-500/30 bg-black/90 backdrop-blur-md sticky top-0 z-50 shadow-2xl py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+      
+      <nav class="flex items-center gap-2 sm:gap-2.5 text-xs font-bold text-white overflow-x-auto no-scrollbar py-1">
+        
+        <!-- Home -->
+        <a href="/index.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="home" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Nexus</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Início</span>
+          </div>
+        </a>
+
+        <!-- 1. Moda 360 -->
+        <a href="/moda.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Moda</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">360</span>
+          </div>
+        </a>
+
+        <!-- 2. Vitrine Digital -->
+        <a href="/vitrine.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="monitor" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Vitrine</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Digital</span>
+          </div>
+        </a>
+
+        <!-- 3. Revenda Auto -->
+        <a href="/revenda.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="car" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Revenda</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Auto</span>
+          </div>
+        </a>
+
+        <!-- 4. Marketing IA -->
+        <a href="/marketing.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="trending-up" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Marketing</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">IA</span>
+          </div>
+        </a>
+
+        <!-- 5. Desenvolvimento Web -->
+        <a href="/desenvolvimento.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="code" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Desenvolvimento</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Web</span>
+          </div>
+        </a>
+
+        <!-- 6. Saúde Integrada -->
+        <a href="/saude.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="activity" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Saúde</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Integrada</span>
+          </div>
+        </a>
+
+        <!-- 7. Turismo & Rotas -->
+        <a href="/turismo.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="compass" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Turismo</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">& Rotas</span>
+          </div>
+        </a>
+
+        <!-- 8. Empresas & Indústria -->
+        <a href="/empresas.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="building-2" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Empresas</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">& Indústria</span>
+          </div>
+        </a>
+
+        <!-- Sobre Nós -->
+        <a href="/sobre.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="award" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Sobre</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Nós</span>
+          </div>
+        </a>
+
+        <!-- Contato -->
+        <a href="/fale-conosco.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/30 bg-black/70 hover:bg-amber-950/30 hover:border-amber-400 text-white/80 hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="phone" class="w-4 h-4 text-amber-400/80 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white/90 group-hover:text-amber-300">Fale</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400/80">Conosco</span>
+          </div>
+        </a>
+
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <!-- HERO DO PRODUTO -->
+  <section class="py-20 px-6 overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center max-w-4xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-amber-500/50 bg-amber-950/40 text-amber-300 text-xs font-bold mb-4 shadow-[0_0_20px_rgba(245,158,11,0.25)]">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+          <span class="tracking-widest uppercase text-[11px]">Automotivo & Frotas</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-4">
+          Revenda Inteligente
+        </h1>
+        <p class="text-base sm:text-lg text-amber-300 font-extrabold uppercase tracking-wider mb-6">
+          Clara • Concessionárias & Veículos • Gestão de Estoque • Simulação Rápida
+        </p>
+      </div>
+
+      <!-- CARD PRINCIPAL EXPANDIDO -->
+      <div class="rounded-3xl border border-amber-500/40 bg-gradient-to-b from-black/95 via-black/90 to-amber-950/20 p-8 sm:p-12 shadow-2xl relative overflow-hidden mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Imagem / Avatar -->
+          <div class="lg:col-span-5 relative rounded-2xl overflow-hidden border border-amber-500/50 shadow-2xl group">
+            <img src="/clara.png" alt="Clara" class="w-full h-80 sm:h-96 object-cover object-center filter brightness-105 group-hover:scale-105 transition-all duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-2">
+              <span class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-black/85 border border-amber-500/40 text-amber-300 text-xs font-bold backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Clara</span>
+              </span>
+              <span class="text-[11px] font-mono text-white/90 bg-black/80 px-3 py-1.5 rounded-full border border-amber-500/30 backdrop-blur-md">
+                Especialista em Revendas
+              </span>
+            </div>
+          </div>
+
+          <!-- Conteúdo e Métricas -->
+          <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+            <p class="text-base sm:text-lg text-white leading-relaxed font-normal">
+              Acelerador de vendas para revendedoras de veículos, autopeças e redes de distribuidores. Catálogo digital sincronizado com ficha técnica completa, fotos em alta definição, simulação imediata de financiamento e qualificação automática de leads.
+            </p>
+
+            <!-- HUD de Métricas -->
+            <div class="grid grid-cols-3 gap-3">
+              
+                <div class="p-3.5 rounded-xl bg-black/80 border border-amber-500/30 text-center">
+                  <span class="text-lg sm:text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-200 block">Instantâneo</span>
+                  <span class="text-[10px] sm:text-[11px] font-semibold text-white/80 block mt-0.5 leading-tight">Simulação de Parcelas</span>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-black/80 border border-amber-500/30 text-center">
+                  <span class="text-lg sm:text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-200 block">100%</span>
+                  <span class="text-[10px] sm:text-[11px] font-semibold text-white/80 block mt-0.5 leading-tight">Estoque Sincronizado</span>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-black/80 border border-amber-500/30 text-center">
+                  <span class="text-lg sm:text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-200 block">+35%</span>
+                  <span class="text-[10px] sm:text-[11px] font-semibold text-white/80 block mt-0.5 leading-tight">Fechamento Rápido</span>
+                </div>
+              
+            </div>
+
+            <!-- Features -->
+            <div class="space-y-3 pt-2">
+              
+                <div class="p-3.5 rounded-xl bg-black/60 border border-amber-500/25 flex items-start space-x-3">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span class="text-xs sm:text-sm text-white font-medium">
+                    <strong class="text-amber-300">Apresentação Visual Premium:</strong> Ficha técnica completa, galeria de fotos e histórico do veículo em um clique no celular do comprador.
+                  </span>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-black/60 border border-amber-500/25 flex items-start space-x-3">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span class="text-xs sm:text-sm text-white font-medium">
+                    <strong class="text-amber-300">Triagem de Financiamento & Troca:</strong> A IA coleta dados do veículo de entrada e agiliza a aprovação da ficha de crédito.
+                  </span>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-black/60 border border-amber-500/25 flex items-start space-x-3">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span class="text-xs sm:text-sm text-white font-medium">
+                    <strong class="text-amber-300">Painel para Vendedores & Representantes:</strong> Controle de comissões, propostas abertas e follow-up automático de cada negociação.
+                  </span>
+                </div>
+              
+            </div>
+
+            <!-- Ajuste Sob Medida -->
+            <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center space-x-3.5 backdrop-blur-sm">
+              <div class="w-9 h-9 rounded-lg bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0">
+                <i data-lucide="sliders" class="w-4 h-4"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-white/95 font-medium leading-relaxed">
+                <strong class="text-amber-300">Ajuste Sob Medida:</strong> Podemos ajustar este produto totalmente de acordo com as necessidades e especificações do cliente.
+              </p>
+            </div>
+
+            <!-- Ações -->
+            <div class="pt-4 flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://wa.me/5551999029371?text=Ol%C3%A1!%20Gostaria%20de%20mais%20detalhes%20do%20Revenda%20Inteligente%20%7C%20Concession%C3%A1rias%20%26%20Ve%C3%ADculos."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-black font-black hover:brightness-110 shadow-lg shadow-amber-500/30 transition flex items-center justify-center space-x-2 text-xs uppercase tracking-wider"
+              >
+                <i data-lucide="message-circle" class="w-4 h-4 text-black"></i><span>Quer mais detalhes? Nos chame no WhatsApp</span>
+                
+              </a>
+              <a
+                href="/index.html"
+                class="w-full sm:w-auto px-6 py-4 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-500/20 text-white hover:text-amber-300 font-bold transition flex items-center justify-center space-x-2 text-xs uppercase tracking-wider"
+              >
+                <i data-lucide="home" class="w-4 h-4 text-amber-400"></i>
+                <span>Voltar à Página Principal</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DETALHAMENTO DO SOFTWARE: ENTENDA DE CARA COMO FUNCIONA NA PRÁTICA -->
+  <section class="py-20 px-6 border-t border-amber-500/30 bg-black/80 relative">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Título da Seção -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-amber-500/40 bg-amber-950/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+          <span>Entenda de Cara</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
+          Como a Revenda Inteligente Funciona de Verdade
+        </h2>
+        <p class="text-white/80 text-sm sm:text-base leading-relaxed font-normal">
+          Vender veículos exige confiança rápida e agilidade na proposta. Veja como a Revenda Inteligente transforma curiosos em compradores decididos em 3 passos simples.
+        </p>
+      </div>
+
+      <!-- 3 Passos Simples -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        
+        <div class="p-6 rounded-2xl border border-amber-500/30 bg-black/90 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 font-black text-lg mb-4">
+              01
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">1. Tour 360° Por Dentro e Por Fora</h3>
+            <p class="text-xs sm:text-sm text-white/80 leading-relaxed">
+              O comprador gira o carro na tela, entra na cabine virtual em 360°, inspeciona acabamento, bancos, painel, quilometragem e estado dos pneus com nitidez de alta resolução.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-amber-500/20 text-xs text-amber-300 font-semibold">
+            Confiança total antes de ir à loja
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-amber-500/30 bg-black/90 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 font-black text-lg mb-4">
+              02
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">2. Simulação & Avaliação do Usado</h3>
+            <p class="text-xs sm:text-sm text-white/80 leading-relaxed">
+              Ele escolhe o valor da entrada, calcula na hora o valor das parcelas e envia os dados do carro usado na troca (placa, km e fotos) para avaliação inteligente com base na Tabela Fipe.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-amber-500/20 text-xs text-amber-300 font-semibold">
+            Proposta real sem enrolação
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-amber-500/30 bg-black/90 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 font-black text-lg mb-4">
+              03
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">3. Test-Drive Agendado no WhatsApp</h3>
+            <p class="text-xs sm:text-sm text-white/80 leading-relaxed">
+              Os dados chegam estruturados no WhatsApp do seu vendedor: nome do cliente, veículo escolhido, valor simulado e proposta do seminovo na troca, bastando agendar o fechamento.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-amber-500/20 text-xs text-amber-300 font-semibold">
+            Venda pré-fechada com menos esforço
+          </div>
+        </div>
+
+      </div>
+
+      <!-- O Que o Software é Capaz de Fazer: Módulos Detalhados -->
+      <div class="rounded-3xl border border-amber-500/40 bg-gradient-to-br from-black/95 via-black/90 to-amber-950/30 p-8 sm:p-12 mb-12 shadow-2xl">
+        <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight mb-8 text-center">
+          Tudo o Que a Revenda Inteligente é Capaz de Fazer
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="p-5 rounded-2xl bg-black/70 border border-amber-500/25 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="rotate-ccw" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Tour Virtual 360° Imersivo</h4>
+            <p class="text-xs text-white/80 leading-relaxed">
+              Permite ao comprador navegar pelo interior e exterior de cada veículo do pátio, destacando opcionais como câmbio automático, teto solar e multimídia.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/70 border border-amber-500/25 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Simulador de Financiamento</h4>
+            <p class="text-xs text-white/80 leading-relaxed">
+              Calcula planos em 12x, 24x, 36x, 48x e 60x, demonstrando valores de parcelas de forma clara e gerando desejo imediato de compra no cliente.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/70 border border-amber-500/25 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="scale" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Avaliação Precisa de Usados</h4>
+            <p class="text-xs text-white/80 leading-relaxed">
+              Cruzamento de dados com Tabela Fipe e média regional de preços, protegendo a margem de lucro da revenda na hora da retoma do seminovo.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/70 border border-amber-500/25 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Atendimento Automático 24 Horas</h4>
+            <p class="text-xs text-white/80 leading-relaxed">
+              Atende compradores de madrugada, finais de semana e feriados pelo WhatsApp, tirando dúvidas sobre estoque e coletando propostas na hora.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/70 border border-amber-500/25 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="layers" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Gestão de Pátio & Margens</h4>
+            <p class="text-xs text-white/80 leading-relaxed">
+              Painel completo com dias de pátio de cada carro, custos de funilaria/revisão, comissão de vendedores e lucro líquido por negociação.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/70 border border-amber-500/25 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="share-2" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Publicação em Múltiplos Portais</h4>
+            <p class="text-xs text-white/80 leading-relaxed">
+              Cadastre o carro uma única vez e envie fotos e especificações para seu site, redes sociais e principais integradores do mercado automotivo.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Para Quem é Indicado -->
+      <div class="p-6 sm:p-8 rounded-2xl border border-amber-500/30 bg-amber-950/20 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-xs font-bold text-amber-300 uppercase tracking-widest block mb-1">Público-Alvo</span>
+          <h4 class="text-lg sm:text-xl font-black text-white mb-1">Para quem é indicada a Revenda Inteligente?</h4>
+          <p class="text-xs sm:text-sm text-white/80 leading-relaxed">
+            Concessionárias autorizadas; revendedoras multimarcas de seminovos; garagens de carros e caminhonetes; lojas de motos novas e usadas; frotistas e locadoras de veículos.
+          </p>
+        </div>
+        <a 
+          href="https://wa.me/5551999029371?text=Ol%C3%A1!%20Quero%20entender%20mais%20sobre%20a%20Revenda%20Inteligente%20para%20minha%20loja."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="shrink-0 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-black text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-amber-500/30 transition flex items-center space-x-2"
+        >
+          <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+          <span>Falar com Nossos Especialistas</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SALVAGUARDA INSTITUCIONAL & MARCO DE CONFORMIDADE JURÍDICA -->
+  <section class="py-12 px-6 border-t border-amber-500/25 bg-black/95 relative">
+    <div class="max-w-6xl mx-auto rounded-3xl border border-amber-500/40 bg-gradient-to-br from-black via-black/95 to-amber-950/20 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-amber-500/20 mb-6">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-mono font-bold tracking-widest text-amber-300 uppercase block">Salvaguarda Institucional & Marco de Conformidade</span>
+            <h4 class="text-lg sm:text-xl font-black text-white">Proteção Jurídica & Responsabilidade Operacional</h4>
+          </div>
+        </div>
+        <span class="px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 font-mono text-[10px] uppercase tracking-wider font-bold">
+          PROTOCOLO TEC-69042-BR
+        </span>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-white/90 leading-relaxed font-normal">
+        <p>
+          <strong class="text-amber-300">1. Natureza Tecnológica & Suporte à Decisão:</strong> A <em>Nexus Tecnologia e Inovação</em> atua exclusivamente como desenvolvedora e licenciadora de infraestrutura de software, inteligência artificial e interfaces computacionais. Todas as análises, sequenciamentos industriais, projeções, triagens e métricas geradas por nossas soluções constituem ferramentas de <strong>suporte e auxílio à decisão humana</strong>. A validação técnica final e a responsabilidade operacional, clínica, farmacêutica, médica, jurídica, comercial e contábil pertencem de forma soberana e intransferível aos diretores técnicos e profissionais legalmente habilitados da organização contratante.
+        </p>
+        <p>
+          <strong class="text-amber-300">2. Soberania de Dados & Conformidade LGPD:</strong> Nossos sistemas são operados sob rígidos padrões de sigilo corporativo e criptografia de ponta a ponta, em total observância à Lei Geral de Proteção de Dados (<em>Lei nº 13.709/2018 - LGPD</em>). Nenhuma informação confidencial, histórico de atendimento ou prontuário é compartilhado ou exposto a modelos ou repositórios públicos.
+        </p>
+        <p>
+          <strong class="text-amber-300">3. Propriedade Intelectual & Segurança Contratual:</strong> Marcas, arquiteturas neurais, códigos-fonte e avatares constituem propriedade intelectual exclusiva protegida pelas <em>Leis nº 9.609/1998 e 9.279/1996</em>. A prestação de serviços é formalizada via contrato de fornecimento com emissão regular de Notas Fiscais sob o CNPJ 69.042.151/0001-09.
+        </p>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-amber-500/15 flex flex-wrap items-center justify-between text-[11px] font-mono text-white/60 gap-2">
+        <span>STATUS: BLINDAGEM ATIVA • CNPJ 69.042.151/0001-09</span>
+        <span class="text-amber-300">SEDE: MATO LEITÃO, RS, BRASIL</span>
+      </div>
+    </div>
+  </section>
+
+    <footer id="contato" class="border-t border-amber-500/30 bg-black/95 py-16 px-6 text-sm text-white backdrop-blur-md">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- LOGO CENTRALIZADO ACIMA DOS TEXTOS -->
+      <div class="flex justify-center mb-10 text-center">
+        <a href="/index.html" class="inline-block group">
+          <img 
+            src="/nexus_logo_tecnologia.png" 
+            alt="Nexus Tecnologia & Inovação" 
+            class="h-20 sm:h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_35px_rgba(245,158,11,0.6)] group-hover:scale-105 transition-all duration-300 mx-auto"
+          />
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12 items-stretch">
+        
+        <!-- CARD 1: DADOS CORPORATIVOS & CNPJ -->
+        <div class="bg-zinc-950/80 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between h-full hover:border-amber-400/60 hover:shadow-amber-500/10 transition-all duration-300 shadow-xl shadow-black/40 backdrop-blur-md group">
+          <div>
+            <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-amber-500/20">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <span class="text-sm font-bold text-white tracking-wide">Dados Corporativos & CNPJ</span>
+            </div>
+            <div class="space-y-2 text-xs font-mono">
+              <p class="text-amber-300 font-black text-sm tracking-wider">IVONI SEVERO SCHUH</p>
+              <p class="text-white font-bold text-xs">
+                CNPJ: <span class="text-amber-400 font-mono font-black text-sm tracking-wider">69.042.151/0001-09</span> • <span class="text-emerald-400 font-semibold">Ativo</span>
+              </p>
+              <p class="text-white/80 text-[11.5px]">Sede Administrativa: Mato Leit&atilde;o, RS &bull; Brasil</p>
+            </div>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-500/15 flex items-center gap-2 text-[11px] text-white/60">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+            <span>Situação Cadastral Regular na Receita Federal</span>
+          </div>
+        </div>
+
+        <!-- CARD 2: TECNOLOGIA & INOVAÇÃO -->
+        <div class="bg-zinc-950/80 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between h-full hover:border-amber-400/60 hover:shadow-amber-500/10 transition-all duration-300 shadow-xl shadow-black/40 backdrop-blur-md group">
+          <div>
+            <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-amber-500/20">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                <i data-lucide="cpu" class="w-4 h-4"></i>
+              </div>
+              <span class="text-sm font-bold text-white tracking-wide">Tecnologia & Inovação</span>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              Soluções práticas em tecnologia e inteligência artificial para o seu negócio. Arquitetura soberana, desenvolvimento sob medida e aceleração corporativa.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-500/15 flex items-center gap-2 text-[11px] text-amber-300/80 font-mono">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+            <span>Inteligência Artificial & Software Sob Medida</span>
+          </div>
+        </div>
+
+        <!-- CARD 3: ECOSSISTEMA & HOLDING -->
+        <div class="bg-zinc-950/80 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between h-full hover:border-amber-400/60 hover:shadow-amber-500/10 transition-all duration-300 shadow-xl shadow-black/40 backdrop-blur-md group">
+          <div>
+            <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-amber-500/20">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                <i data-lucide="globe" class="w-4 h-4"></i>
+              </div>
+              <span class="text-sm font-bold text-white tracking-wide">Ecossistema & Holding</span>
+            </div>
+            <div class="space-y-3 text-xs">
+              <a 
+                href="https://nexusholdinggroup.com.br" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center justify-center w-full space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-amber-950/40 to-black border border-amber-400/60 text-amber-300 hover:text-white hover:border-amber-300 hover:bg-amber-500/30 transition-all duration-300 font-bold shadow-lg shadow-amber-500/10 group/btn"
+              >
+                <i data-lucide="globe" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                <span>Acessar Nexus Holding Group</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 text-amber-400 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+              </a>
+              <div class="text-white font-medium flex items-center gap-2 text-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Domínio Oficial: <strong class="text-amber-300 font-mono">nexustecnologiaeinovacao.com.br</strong></span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-500/15 text-[11px] text-white/60 leading-relaxed">
+            Unidade operacional de software sob a Lei Brasileira.
+          </div>
+        </div>
+
+      </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-amber-500/30 flex flex-col sm:flex-row items-center justify-between text-xs text-white gap-4">
+      <span>© 2026 Nexus Tecnologia e Inovação. Todos os direitos reservados.</span>
+      <div class="flex items-center space-x-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+        <span class="text-white font-bold">Padrão Nexus Exclusive • Ativo em Produção</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

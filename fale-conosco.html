@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fale Conosco | Atendimento Executivo & Comercial | Nexus Tecnologia e Inovação</title>
+  <meta name="description" content="Entre em contato direto com a diretoria executiva, fundadores e equipe comercial da Nexus Tecnologia e Inovação. Atendimento ágil e personalizado via WhatsApp e E-mail." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%23f59e0b%22/><text y=%2268%22 font-size=%2260%22 font-family=%22system-ui,sans-serif%22 font-weight=%22bold%22 fill=%22%23000000%22 x=%2226%22>N</text></svg>" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              350: '#fbbf24',
+              450: '#f59e0b',
+              550: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #000000;
+      min-height: 100vh;
+      color: #ffffff;
+    }
+    .amber-gradient-bg {
+      background: radial-gradient(ellipse at center, rgba(245,158,11,0.75) 0%, rgba(245,158,11,0.22) 45%, rgba(0,0,0,1) 120%);
+    }
+    .glow-amber {
+      box-shadow: 0 0 45px -10px rgba(245, 158, 11, 0.28);
+    }
+    .glow-amber-lg {
+      box-shadow: 0 0 70px -15px rgba(245, 158, 11, 0.38);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .menu-aura {
+      box-shadow: 0 0 16px -3px rgba(245, 158, 11, 0.28);
+    }
+    .menu-aura:hover {
+      box-shadow: 0 0 24px 2px rgba(245, 158, 11, 0.45);
+    }
+  </style>
+</head>
+<body class="bg-black text-white selection:bg-amber-500 selection:text-black relative overflow-x-hidden">
+
+  <div class="fixed inset-0 -z-20 bg-black pointer-events-none"></div>
+  <div class="fixed inset-0 -z-10 amber-gradient-bg pointer-events-none"></div>
+
+  <!-- MASTHEAD SOBERANO -->
+  <div id="masthead-brand" class="relative w-full border-b border-amber-500/30 bg-black/90 backdrop-blur-md py-6 sm:py-8 px-6 sm:px-10 lg:px-14 overflow-hidden text-center">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,158,11,0.28)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center justify-center text-center gap-3">
+      <a href="/index.html" class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 group">
+        <h1 class="text-6xl sm:text-7xl md:text-8xl font-black tracking-tight text-white leading-none select-none flex items-center">
+          <span>NE</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 via-amber-400 to-amber-600 drop-shadow-[0_0_35px_rgba(245,158,11,0.9)]">X</span>
+          <span>US</span>
+        </h1>
+        <div class="hidden sm:block w-[3px] h-16 sm:h-20 md:h-24 bg-gradient-to-b from-amber-400 via-amber-500/80 to-transparent rounded-full"></div>
+        <div class="flex flex-col justify-center sm:text-left text-center">
+          <span class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black tracking-[0.16em] text-white uppercase leading-tight">TECNOLOGIA</span>
+          <span class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black tracking-[0.16em] text-amber-300 uppercase leading-tight">& INOVAÇÃO</span>
+        </div>
+      </a>
+      <div class="text-xs text-amber-300/80 font-mono tracking-wider uppercase font-semibold mt-1">
+        Nexus Holding Group • Atendimento Direto
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <header class="border-b border-amber-500/30 bg-black/90 backdrop-blur-md sticky top-0 z-50 shadow-2xl py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+      
+      <nav class="flex items-center gap-2 sm:gap-2.5 text-xs font-bold text-white overflow-x-auto no-scrollbar py-1">
+        
+        <!-- Home -->
+        <a href="/index.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="home" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Nexus</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Início</span>
+          </div>
+        </a>
+
+        <!-- 1. Moda 360 -->
+        <a href="/moda.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Moda</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">360</span>
+          </div>
+        </a>
+
+        <!-- 2. Vitrine Digital -->
+        <a href="/vitrine.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="monitor" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Vitrine</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Digital</span>
+          </div>
+        </a>
+
+        <!-- 3. Revenda Auto -->
+        <a href="/revenda.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="car" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Revenda</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Auto</span>
+          </div>
+        </a>
+
+        <!-- 4. Marketing IA -->
+        <a href="/marketing.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="trending-up" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Marketing</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">IA</span>
+          </div>
+        </a>
+
+        <!-- 5. Desenvolvimento Web -->
+        <a href="/desenvolvimento.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="code" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Desenvolvimento</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Web</span>
+          </div>
+        </a>
+
+        <!-- 6. Saúde Integrada -->
+        <a href="/saude.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="activity" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Saúde</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Integrada</span>
+          </div>
+        </a>
+
+        <!-- 7. Turismo & Rotas -->
+        <a href="/turismo.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="compass" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Turismo</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">& Rotas</span>
+          </div>
+        </a>
+
+        <!-- 8. Empresas & Indústria -->
+        <a href="/empresas.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="building-2" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Empresas</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">& Indústria</span>
+          </div>
+        </a>
+
+        <!-- Sobre Nós -->
+        <a href="/sobre.html" class="menu-aura h-11 px-3 rounded-xl border border-amber-500/40 bg-black/80 hover:bg-amber-950/40 hover:border-amber-400 text-white hover:text-amber-300 transition-all duration-300 flex items-center justify-center space-x-2 shrink-0 select-none group">
+          <i data-lucide="award" class="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-bold text-white group-hover:text-amber-300">Sobre</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-amber-400">Nós</span>
+          </div>
+        </a>
+
+        <!-- Fale Conosco (Ativo) -->
+        <a href="/fale-conosco.html" class="h-11 px-3.5 rounded-xl border border-amber-400 bg-amber-500 text-black font-extrabold shadow-[0_0_20px_rgba(245,158,11,0.6)] flex items-center justify-center space-x-2 shrink-0 select-none">
+          <i data-lucide="phone-call" class="w-4 h-4 text-black shrink-0"></i>
+          <div class="flex flex-col text-center leading-none space-y-0.5">
+            <span class="text-[11px] font-black text-black">Fale</span>
+            <span class="text-[9.5px] font-black uppercase tracking-wider text-black">Conosco</span>
+          </div>
+        </a>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-16 pb-12 px-6 overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-amber-500/50 bg-black/80 backdrop-blur-md text-amber-300 text-xs font-bold mb-6 shadow-[0_0_25px_rgba(245,158,11,0.25)]">
+        <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+        <span class="tracking-wider uppercase text-[11px]">Canais Oficiais & Atendimento Direto</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
+        Fale Diretamente com a <br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400">
+          Nossa Liderança & Especialistas
+        </span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed font-normal mb-8">
+        Sem intermediários, filas ou robôs genéricos. Conecte-se em tempo real com a fundadora, a diretoria de inovação e a executiva comercial da Nexus Tecnologia para tirar dúvidas, agendar demonstrações ou receber propostas sob medida.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-amber-300">
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Atendimento 100% Humano e Ativo</span>
+        <span class="text-white/40">•</span>
+        <span>WhatsApp Executivo Imediato</span>
+        <span class="text-white/40">•</span>
+        <span>E-mails Corporativos Homologados</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OS 3 CARTOES OFICIAIS DE CONTATO -->
+  <section class="py-10 pb-20 px-6 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- 1. CARD IVONI SEVERO SCHUH -->
+        <div class="rounded-3xl border-2 border-amber-500/40 bg-gradient-to-b from-black/95 via-black/90 to-amber-950/20 p-7 shadow-2xl glow-amber relative flex flex-col justify-between group hover:border-amber-400 transition-all duration-500">
+          <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+          <div>
+            <!-- Imagem Oficial -->
+            <div class="relative w-full h-72 rounded-2xl overflow-hidden border border-amber-500/40 mb-6 group shadow-xl">
+              <img 
+                src="/ivoni_severo_schuh.png" 
+                alt="Ivoni Severo Schuh - Fundadora da Nexus Tecnologia" 
+                class="w-full h-full object-cover object-center filter brightness-105 group-hover:scale-105 transition-all duration-700" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-black/85 border border-amber-500/40 text-amber-300 text-xs font-bold backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Fundadora & Direção Geral</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Identificação -->
+            <span class="text-[11px] font-bold tracking-widest text-amber-300 uppercase block mb-1">
+              Diretoria Executiva & Governança
+            </span>
+            <h2 class="text-2xl font-black text-white mb-2">
+              Ivoni Severo Schuh
+            </h2>
+            <p class="text-xs text-white/80 leading-relaxed font-normal mb-6">
+              Liderança e governança da Nexus Tecnologia. Fale diretamente sobre parcerias institucionais, validação de contratos corporativos e emissão de notas fiscais sob o CNPJ da empresa.
+            </p>
+
+            <!-- Canais de Contato -->
+            <div class="space-y-3 pt-4 border-t border-amber-500/20 mb-6">
+              <!-- E-mail -->
+              <a 
+                href="mailto:ivoni@nexusholdinggroup.com.br" 
+                class="flex items-center space-x-3 p-3 rounded-xl bg-black/80 border border-amber-500/30 hover:border-amber-400 hover:bg-amber-950/40 transition group"
+              >
+                <div class="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-[10px] uppercase font-bold text-amber-400/80 block">E-mail Corporativo</span>
+                  <span class="text-xs font-medium text-white truncate block group-hover:text-amber-300 transition">
+                    ivoni@nexusholdinggroup.com.br
+                  </span>
+                </div>
+              </a>
+
+              <!-- WhatsApp -->
+              <a 
+                href="https://wa.me/5551999029371?text=Ol%C3%A1%20Ivoni!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Nexus%20Tecnologia." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center space-x-3 p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30 hover:border-emerald-400 hover:bg-emerald-950/60 transition group"
+              >
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 block">WhatsApp Diretoria</span>
+                  <span class="text-xs font-bold text-white truncate block group-hover:text-emerald-300 transition">
+                    +55 (51) 99902-9371
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Botão de Ação -->
+          <a 
+            href="https://wa.me/5551999029371?text=Ol%C3%A1%20Ivoni!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Nexus%20Tecnologia." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-black font-extrabold text-xs tracking-wider uppercase flex items-center justify-center space-x-2 shadow-lg shadow-amber-500/30 hover:brightness-110 transition"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+            <span>Chamar Ivoni no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- 2. CARD GEAN (GEANDERSON SCHUH) -->
+        <div class="rounded-3xl border-2 border-amber-500/40 bg-gradient-to-b from-black/95 via-black/90 to-amber-950/20 p-7 shadow-2xl glow-amber relative flex flex-col justify-between group hover:border-amber-400 transition-all duration-500">
+          <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+          <div>
+            <!-- Imagem Oficial -->
+            <div class="relative w-full h-72 rounded-2xl overflow-hidden border border-amber-500/40 mb-6 group shadow-xl">
+              <img 
+                src="/gean.jpg" 
+                alt="Geanderson Leandro Schuh - Cofundador & Tecnologia Nexus" 
+                class="w-full h-full object-cover object-top filter brightness-105 group-hover:scale-105 transition-all duration-700" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-black/85 border border-amber-500/40 text-amber-300 text-xs font-bold backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Cofundador & Engenharia / IA</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Identificação -->
+            <span class="text-[11px] font-bold tracking-widest text-amber-300 uppercase block mb-1">
+              Inovação & Arquitetura de Software
+            </span>
+            <h2 class="text-2xl font-black text-white mb-2">
+              Geanderson L. Schuh
+            </h2>
+            <p class="text-xs text-white/80 leading-relaxed font-normal mb-6">
+              Responsável pela engenharia de software, modelos neurais sob medida e infraestruturas inteligentes. Fale diretamente sobre especificações técnicas, integrações de APIs e requisitos de projetos complexos.
+            </p>
+
+            <!-- Canais de Contato -->
+            <div class="space-y-3 pt-4 border-t border-amber-500/20 mb-6">
+              <!-- E-mail -->
+              <a 
+                href="mailto:geanderson@nexusholdinggroup.com.br" 
+                class="flex items-center space-x-3 p-3 rounded-xl bg-black/80 border border-amber-500/30 hover:border-amber-400 hover:bg-amber-950/40 transition group"
+              >
+                <div class="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-[10px] uppercase font-bold text-amber-400/80 block">E-mail Corporativo</span>
+                  <span class="text-xs font-medium text-white truncate block group-hover:text-amber-300 transition">
+                    geanderson@nexusholdinggroup.com.br
+                  </span>
+                </div>
+              </a>
+
+              <!-- WhatsApp -->
+              <a 
+                href="https://wa.me/5551999799582?text=Ol%C3%A1%20Gean!%20Gostaria%20de%20alinhar%20um%20projeto%20de%20tecnologia%20com%20a%20Nexus." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center space-x-3 p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30 hover:border-emerald-400 hover:bg-emerald-950/60 transition group"
+              >
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 block">WhatsApp Direto</span>
+                  <span class="text-xs font-bold text-white truncate block group-hover:text-emerald-300 transition">
+                    +55 (51) 99979-9582
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Botão de Ação -->
+          <a 
+            href="https://wa.me/5551999799582?text=Ol%C3%A1%20Gean!%20Gostaria%20de%20alinhar%20um%20projeto%20de%20tecnologia%20com%20a%20Nexus." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-black font-extrabold text-xs tracking-wider uppercase flex items-center justify-center space-x-2 shadow-lg shadow-amber-500/30 hover:brightness-110 transition"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+            <span>Chamar Gean no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- 3. CARD CARLA TECNOLOGIA (CARLA SCHUH) -->
+        <div class="rounded-3xl border-2 border-amber-500/40 bg-gradient-to-b from-black/95 via-black/90 to-amber-950/20 p-7 shadow-2xl glow-amber relative flex flex-col justify-between group hover:border-amber-400 transition-all duration-500">
+          <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+          <div>
+            <!-- Imagem Oficial -->
+            <div class="relative w-full h-72 rounded-2xl overflow-hidden border border-amber-500/40 mb-6 group shadow-xl">
+              <img 
+                src="/carla.png" 
+                alt="Carla C. Schuh - Comercial e Agendamentos Nexus Tecnologia" 
+                class="w-full h-full object-cover object-center filter brightness-105 group-hover:scale-105 transition-all duration-700" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-black/85 border border-amber-500/40 text-amber-300 text-xs font-bold backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Comercial e Agendamentos</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Identificação -->
+            <span class="text-[11px] font-bold tracking-widest text-amber-300 uppercase block mb-1">
+              Comercial & Agendamentos
+            </span>
+            <h2 class="text-2xl font-black text-white mb-2">
+              Carla C. Schuh
+            </h2>
+            <p class="text-xs text-white/80 leading-relaxed font-normal mb-6">
+              Especialista em atendimento comercial e agendamentos de demonstrações práticas das nossas soluções em inteligência artificial, vitrines e automações. Agende uma apresentação guiada para o seu setor.
+            </p>
+
+            <!-- Canais de Contato -->
+            <div class="space-y-3 pt-4 border-t border-amber-500/20 mb-6">
+              <!-- E-mail -->
+              <a 
+                href="mailto:vendas@nexusholdinggroup.com.br" 
+                class="flex items-center space-x-3 p-3 rounded-xl bg-black/80 border border-amber-500/30 hover:border-amber-400 hover:bg-amber-950/40 transition group"
+              >
+                <div class="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-[10px] uppercase font-bold text-amber-400/80 block">E-mail da Holding</span>
+                  <span class="text-xs font-medium text-white truncate block group-hover:text-amber-300 transition">
+                    vendas@nexusholdinggroup.com.br
+                  </span>
+                </div>
+              </a>
+
+              <!-- WhatsApp -->
+              <a 
+                href="https://wa.me/5551993783897?text=Ol%C3%A1%20Carla!%20Gostaria%20de%20solicitar%20um%20agendamento%20e%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Nexus%20Tecnologia." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center space-x-3 p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30 hover:border-emerald-400 hover:bg-emerald-950/60 transition group"
+              >
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 block">WhatsApp Comercial</span>
+                  <span class="text-xs font-bold text-white truncate block group-hover:text-emerald-300 transition">
+                    +55 (51) 99378-3897
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Botão de Ação -->
+          <a 
+            href="https://wa.me/5551993783897?text=Ol%C3%A1%20Carla!%20Gostaria%20de%20solicitar%20um%20agendamento%20e%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Nexus%20Tecnologia." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-black font-extrabold text-xs tracking-wider uppercase flex items-center justify-center space-x-2 shadow-lg shadow-amber-500/30 hover:brightness-110 transition"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+            <span>Chamar Carla no WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE RESPALDO CORPORATIVO & HORÁRIOS -->
+  <section class="py-12 px-6 border-t border-amber-500/25 bg-black/80">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="p-6 rounded-2xl border border-amber-500/30 bg-black/60 flex items-start space-x-4">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
+          <i data-lucide="globe-2" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-white mb-1">Horário de Atendimento</h3>
+          <p class="text-xs text-white/80 leading-relaxed">
+            <strong class="text-amber-300 font-semibold">24 horas mediante agendamento</strong><br />
+            Atendimento estruturado para conectar e operar com mais de 60 países e seus respectivos fusos horários.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-amber-500/30 bg-black/60 flex items-start space-x-4">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
+          <i data-lucide="map-pin" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-white mb-1">Sede Administrativa</h3>
+          <p class="text-xs text-white/80 leading-relaxed">
+            Mato Leitão, Rio Grande do Sul, Brasil.<br />
+            Operação e implantação 100% digital nacional e internacional.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-amber-500/30 bg-black/60 flex items-start space-x-4">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
+          <i data-lucide="file-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-white mb-1">Formalidade & CNPJ</h3>
+          <p class="text-xs text-white/80 leading-relaxed">
+            CNPJ: <span class="text-amber-300 font-mono font-bold">69.042.151/0001-09</span><br />
+            Emissão de Nota Fiscal Eletrônica e Contratos Homologados.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ SOBERANO -->
+  <footer id="contato" class="border-t border-amber-500/30 bg-black/95 py-16 px-6 text-sm text-white backdrop-blur-md">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- LOGO CENTRALIZADO ACIMA DOS TEXTOS -->
+      <div class="flex justify-center mb-10 text-center">
+        <a href="/index.html" class="inline-block group">
+          <img 
+            src="/nexus_logo_tecnologia.png" 
+            alt="Nexus Tecnologia & Inovação" 
+            class="h-20 sm:h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_35px_rgba(245,158,11,0.6)] group-hover:scale-105 transition-all duration-300 mx-auto"
+          />
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12 items-stretch">
+        
+        <!-- CARD 1: DADOS CORPORATIVOS & CNPJ -->
+        <div class="bg-zinc-950/80 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between h-full hover:border-amber-400/60 hover:shadow-amber-500/10 transition-all duration-300 shadow-xl shadow-black/40 backdrop-blur-md group">
+          <div>
+            <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-amber-500/20">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <span class="text-sm font-bold text-white tracking-wide">Dados Corporativos & CNPJ</span>
+            </div>
+            <div class="space-y-2 text-xs font-mono">
+              <p class="text-amber-300 font-black text-sm tracking-wider">IVONI SEVERO SCHUH</p>
+              <p class="text-white font-bold text-xs">
+                CNPJ: <span class="text-amber-400 font-mono font-black text-sm tracking-wider">69.042.151/0001-09</span> • <span class="text-emerald-400 font-semibold">Ativo</span>
+              </p>
+              <p class="text-white/80 text-[11.5px]">Sede Administrativa: Mato Leit&atilde;o, RS &bull; Brasil</p>
+            </div>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-500/15 flex items-center gap-2 text-[11px] text-white/60">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+            <span>Situação Cadastral Regular na Receita Federal</span>
+          </div>
+        </div>
+
+        <!-- CARD 2: TECNOLOGIA & INOVAÇÃO -->
+        <div class="bg-zinc-950/80 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between h-full hover:border-amber-400/60 hover:shadow-amber-500/10 transition-all duration-300 shadow-xl shadow-black/40 backdrop-blur-md group">
+          <div>
+            <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-amber-500/20">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                <i data-lucide="cpu" class="w-4 h-4"></i>
+              </div>
+              <span class="text-sm font-bold text-white tracking-wide">Tecnologia & Inovação</span>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              Soluções práticas em tecnologia e inteligência artificial para o seu negócio. Arquitetura soberana, desenvolvimento sob medida e aceleração corporativa.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-500/15 flex items-center gap-2 text-[11px] text-amber-300/80 font-mono">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+            <span>Inteligência Artificial & Software Sob Medida</span>
+          </div>
+        </div>
+
+        <!-- CARD 3: ECOSSISTEMA & HOLDING -->
+        <div class="bg-zinc-950/80 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between h-full hover:border-amber-400/60 hover:shadow-amber-500/10 transition-all duration-300 shadow-xl shadow-black/40 backdrop-blur-md group">
+          <div>
+            <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-amber-500/20">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                <i data-lucide="globe" class="w-4 h-4"></i>
+              </div>
+              <span class="text-sm font-bold text-white tracking-wide">Ecossistema & Holding</span>
+            </div>
+            <div class="space-y-3 text-xs">
+              <a 
+                href="https://nexusholdinggroup.com.br" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center justify-center w-full space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-amber-950/40 to-black border border-amber-400/60 text-amber-300 hover:text-white hover:border-amber-300 hover:bg-amber-500/30 transition-all duration-300 font-bold shadow-lg shadow-amber-500/10 group/btn"
+              >
+                <i data-lucide="globe" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                <span>Acessar Nexus Holding Group</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 text-amber-400 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+              </a>
+              <div class="text-white font-medium flex items-center gap-2 text-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Domínio Oficial: <strong class="text-amber-300 font-mono">nexustecnologiaeinovacao.com.br</strong></span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-500/15 text-[11px] text-white/60 leading-relaxed">
+            Unidade operacional de software sob a Lei Brasileira.
+          </div>
+        </div>
+
+      </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-amber-500/30 flex flex-col sm:flex-row items-center justify-between text-xs text-white gap-4">
+      <span>© 2026 Nexus Tecnologia e Inovação. Todos os direitos reservados.</span>
+      <div class="flex items-center space-x-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+        <span class="text-white font-bold">Padrão Nexus Exclusive • Ativo em Produção</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
